@@ -57,16 +57,37 @@ Backtest the new model to evaluate its performance. Save a PNG image of the cumu
 ## **Create an Evaluation Report**
 In the previous sections, you updated your ```README.md``` file with your conclusions. To accomplish this section, you need to add a summary evaluation report at the end of the ```README.md``` file. For this report, express your final conclusions and analysis. Support your findings by using the PNG images that you created.
 
+
 ***
+
+
 # **_Evaluation Report_**
-The following section outlines the comparison and analysis for different Machine Learning methods:
+The following sections outline the comparison and analysis of different Machine Learning methods:
 
 ## **_Establish a Baseline Performance_**
-The baseline performance utilizes a SVC classifier model and generates signals using different SMA values (short window = 4 days vs long window = 100 days). The accuracy rate is 0.55.
+The baseline training data is 3 months from the beginning of the dataset. 
+The baseline performance utilizes a SVC classifier model and generates signals using different SMA values (short window = 4 days vs long window = 100 days). 
+The accuracy rate is 0.55.
 
 ![image](https://user-images.githubusercontent.com/103230949/180673091-f511c725-4ce3-46db-8b5c-d920a09f3abd.png)
+
 ![image](https://user-images.githubusercontent.com/103230949/180673209-49baf394-5f7c-4f80-9b6c-37f8c2fad4ea.png)
 
 ## **_Tune the Baseline Trading Algorithm_**
+Modified training data window, increased from 3 months to 6 months.
+The new performance with modified training data has an accuracy rate of 0.56.
+
+![6 month training set](https://user-images.githubusercontent.com/103230949/180693016-f480b997-b51f-40a2-8ea4-db3628745ba2.png)
+
+![hvplot_6 month training set](https://user-images.githubusercontent.com/103230949/180693032-bfa55e89-cbe1-4501-9b3a-b59e217c922a.png)
+
+It seems like when we increased the training window, it actually imporved our model's accuracy and cumulative returns. Not so much when we decreased the training window when compared to the original data.
 
 ## **_Evaluate a New Machine Learning Classifier_**
+In this section, we utlized a new machine learning classifier called LogisticRegression with all input parameters the same as the original dataset.
+The new machine learning classifer has lower accuray rate of 0.52.
+We should continue to utlize the original machine learning method but try to improve the model by increasing the training period. 
+
+![lr_3 month training set](https://user-images.githubusercontent.com/103230949/180694176-8241203b-6e38-4009-8096-f8560bef078a.png)
+
+![lr_hvplot_3 month training set](https://user-images.githubusercontent.com/103230949/180694181-d14e4116-6ae4-4e23-a3bd-fc11aa1b9691.png)
