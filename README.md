@@ -54,5 +54,21 @@ Using the original training data as the baseline model, fit another model with t
 
 Backtest the new model to evaluate its performance. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns for this updated trading algorithm, and write your conclusions in your ```README.md``` file. Answer the following questions: Did this new model perform better or worse than the provided baseline model? Did this new model perform better or worse than your tuned trading algorithm?
 
-Create an Evaluation Report
+## **Create an Evaluation Report**
 In the previous sections, you updated your ```README.md``` file with your conclusions. To accomplish this section, you need to add a summary evaluation report at the end of the ```README.md``` file. For this report, express your final conclusions and analysis. Support your findings by using the PNG images that you created.
+
+
+
+
+# **Evaluation Report**
+The following section outlines the comparison and analysis for different Machine Learning methods:
+
+## **Establish a Baseline Performance**
+The baseline performance utilizes a SVC classifier model and generates signals using different SMA values (short window = 4 days vs long window = 100 days). The accuracy rate is 0.55.
+
+![image](https://user-images.githubusercontent.com/103230949/180673091-f511c725-4ce3-46db-8b5c-d920a09f3abd.png)
+![image](https://user-images.githubusercontent.com/103230949/180673209-49baf394-5f7c-4f80-9b6c-37f8c2fad4ea.png)
+
+## **Tune the Baseline Trading Algorithm**
+
+## **Evaluate a New Machine Learning Classifier**
