@@ -48,7 +48,7 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 ## **Evaluate a New Machine Learning Classifier**
 In this section, you’ll use the original parameters that the starter code provided. But, you’ll apply them to the performance of a second machine learning model. To do so, complete the following steps:
 
-Import a new classifier, such as ```AdaBoost```, ```DecisionTreeClassifier```, or ```LogisticRegression```. (For the full list of classifiers, refer to the [Supervised learning page] (https://scikit-learn.org/stable/supervised_learning.html) in the scikit-learn documentation.)
+Import a new classifier, such as ```AdaBoost```, ```DecisionTreeClassifier```, or ```LogisticRegression```. (For the full list of classifiers, refer to the [Supervised learning page](https://scikit-learn.org/stable/supervised_learning.html) in the scikit-learn documentation.)
 
 Using the original training data as the baseline model, fit another model with the new classifier.
 
